@@ -1,4 +1,4 @@
-# Box-Aware Tracker (BAT)
+# Class-agnostic Tracker for LiDAR Point Clouds
 Pytorch-Lightning implementation of the Class-agonostic Tracker, based on Open3DSOT.  
 
 ### Setup
@@ -11,9 +11,7 @@ Installation
   conda activate casot
   ```
 + Install pytorch
-  ```
-  conda install pytorch==1.7.0 torchvision==0.8.1 cudatoolkit=10.1 -c pytorch
-  ```
+  pytorch 1.7.0 + cuda 10.1
 
 + Install other dependencies:
   ```
@@ -63,11 +61,12 @@ NuScenes dataset
 ### Quick Start
 #### Training
 To train a model, you must specify the `.yaml` file with `--cfg` argument. The `.yaml` file contains all the configurations of the dataset and the model.
-######KITTI-Setting-1
+
+KITTI-Setting-1:
 ```bash
 python main.py --cfg cfgs/P2B_Car.yaml --gpu 0 1 --category_name noCar --re_weight
 ```
-######KITTI-Setting-2
+KITTI-Setting-2:
 ```bash
 python main.py --cfg cfgs/P2B_Car.yaml --gpu 0 1 --category_name noPed  --re_weight
 ```
@@ -76,6 +75,7 @@ After you start training, you can start Tensorboard to monitor the training proc
 tensorboard --logdir=./lightning/version_[xx] --port=6006
 ```
 By default, the trainer runs a full evaluation on the full test split after training every epoch. You can set `--check_val_every_n_epoch` to a larger number to speed up the training.
+
 #### Testing
 To test a trained model, specify the checkpoint location with `--checkpoint` argument and send the `--test` flag to the command.
 ```bash
