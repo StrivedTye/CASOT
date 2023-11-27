@@ -82,5 +82,14 @@ To test a trained model, specify the checkpoint location with `--checkpoint` arg
 python main.py --cfg cfgs/P2B_Car.yaml --gpu 0 1 --checkpoint /path/to/checkpoint/xxx.ckpt --test
 ```
 
+### Results
+|Trackers|KITTI Setting-1|     |KITTI Setting-2| |
+|--------|---------|-----------|---------|-------|
+|        |Observed |Unseen(Car)|Observed |Unseen(Pedestrian)|
+|P2B-U   |38.6/57.4|32.4/41.0  |55.6/70.1|24.2/45.4|
+|BAT-U   |33.9/49.8|24.9/33.7  |59.6/73.1|12.9/21.8|
+|V2B-U   |52.1/74.7|47.8/59.6  |66.1/77.1|24.4/43.7|
+|STNet-U |50.3/73.8|44.1/57.9  |66.9/78.9|27.1/46.3|
+
 ### Acknowledgment
 + This repo is built upon [Open3DSOT](https://github.com/HaozheQi/P2B).
