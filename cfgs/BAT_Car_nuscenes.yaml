@@ -67,7 +67,7 @@ bc_weight: 1.0
 reference_BB: previous_result
 shape_aggregation: firstandprevious
 use_z: False  # the author's config
-limit_box: True
+limit_box: False
 IoU_space: 3
 
 #training

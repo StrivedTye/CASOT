@@ -75,7 +75,6 @@ use_z: True
 limit_box: False
 IoU_space: 3
 #save_test_path: ./visual_results/kitti_BAT
-attack: False
 
 #training
 batch_size: 64 #batch_size per gpu

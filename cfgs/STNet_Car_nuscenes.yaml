@@ -1,7 +1,5 @@
 #data
 dataset: nuscenes
-#cg1: /workspace/data/tracking/train_datasets/KITTI_Tracking/truly_using
-#cg3: /workspace/data/tracking/KITTI_Tracking/truly_using
 path: /workspace/data/nuscenes/
 version: v1.0-trainval
 category_name: Car # [Car, Van, Pedestrian, Cyclist, All]

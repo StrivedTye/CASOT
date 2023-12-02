@@ -1,7 +1,5 @@
 #data
 dataset: kitti
-#cg1: /workspace/data/tracking/train_datasets/KITTI_Tracking/truly_using
-#cg3: /workspace/data/tracking/KITTI_Tracking/truly_using
 path: /workspace/data/KITTI_Tracking/
 category_name: Car # [Car, Van, Pedestrian, Cyclist, All]
 search_bb_scale: 1  # stnet use 1

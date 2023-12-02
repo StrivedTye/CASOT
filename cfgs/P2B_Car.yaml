@@ -1,7 +1,5 @@
 #data
 dataset: kitti
-#cg3: /workspace/data/tracking/KITTI_Tracking/truly_using
-#cg1: /workspace/data/tracking/train_datasets/KITTI_Tracking/truly_using
 path: /workspace/data/KITTI_Tracking/ #/dataset/KITTI_Tracking/
 category_name: Car # [Car, Van, Pedestrian, Cyclist, All]
 search_bb_scale: 1.25
@@ -15,14 +13,12 @@ sample_per_epoch: -1
 degrees: True # use degrees or radians
 num_candidates: 4
 coordinate_mode: velodyne #camera
-up_axis: [0, 0, 1]#[0, -1, 0]
+up_axis: [0, 0, 1] #[0, -1, 0]
 train_split: train
 val_split: test
 test_split: test
 preload_offset: 10
 box_seven_param: False
-#use_z_offset: True  #  the offset to obtain sample box
-#limit_box_abs: True  # when generating sample box, make sure the motion is not so large.
 
 
 #model configuration
@@ -68,7 +64,6 @@ use_z: False
 limit_box: False
 IoU_space: 3
 #save_test_path: ./visual_results/kitti_P2B
-attack: False
 
 #training
 batch_size: 64
