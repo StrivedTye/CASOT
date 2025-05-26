@@ -93,6 +93,7 @@ python main.py --cfg cfgs/P2B_Car.yaml --gpu 0 1 --checkpoint /path/to/checkpoin
 |MBPTrack-U |58.9/82.3|51.9/66.2  |69.63/81.97|25.69/44.15|
 
 |Trackers|nuScenes Setting-1|     |nuScenes Setting-2| |
+|--------|---------|-----------|---------|-------|
 |P2P-U | 51.54/74.09 |57.99/65.55 |58.07/63.69|23.76/53.14|
 ### Acknowledgment
 + This repo is built upon [Open3DSOT](https://github.com/HaozheQi/P2B).
